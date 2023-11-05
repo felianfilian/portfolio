@@ -1,0 +1,14 @@
+@import "src/assets/global-scss.scss";
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  min-height: 50px;
+
+  padding: 12px 24px;
+
+  background-color: $bg01;
+}
