@@ -1,0 +1,12 @@
+.portfolio-card {
+  margin-bottom: 12px;
+  padding: 12px 24px;
+
+  background-color: rgba($color: #fff, $alpha: 0.1);
+
+  border-radius: 12px;
+}
+
+.portfolio-card:hover {
+  background-color: rgba($color: #fff, $alpha: 0.2);
+}
