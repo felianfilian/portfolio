@@ -1,6 +1,8 @@
 @import "src/assets/global-scss.scss";
 
 .main-header {
+  box-sizing: border-box;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,4 +13,14 @@
   padding: 12px 24px;
 
   background-color: $bg01;
+}
+
+#main-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#main-menu a {
+  text-decoration: none;
 }
