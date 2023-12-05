@@ -1,0 +1,21 @@
+@import "src/assets/global-scss.scss";
+
+.title-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.bg-line {
+  background-color: $color02;
+  height: 4px;
+}
+
+.width-20p {
+  width: 20%;
+}
+
+.width-40p {
+  width: 40%;
+}
