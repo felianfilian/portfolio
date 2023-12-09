@@ -1,4 +1,18 @@
 #section-hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-profile {
+  width: 40vw;
+  max-width: 400px;
+
+  filter: drop-shadow(0 0 64px rgba(255, 255, 255, 0.5));
 }
