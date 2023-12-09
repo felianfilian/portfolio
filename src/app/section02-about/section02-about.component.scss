@@ -24,10 +24,13 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  padding: 64px 0;
 }
 
 .img-profile-head {
   width: 200px;
 
+  border: 2px solid $color01;
   border-radius: 50%;
 }
