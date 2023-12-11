@@ -21,6 +21,12 @@
 }
 
 .portfolio-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  max-width: 992px;
+
   margin-bottom: 12px;
   padding: 12px 24px;
 
@@ -31,4 +37,14 @@
 
 .portfolio-card:hover {
   background-color: rgba($color: #fff, $alpha: 0.2);
+}
+
+.img-project-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-project {
+  min-width: 300px;
+  max-width: 80%;
 }
