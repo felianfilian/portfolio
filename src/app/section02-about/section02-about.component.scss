@@ -28,8 +28,13 @@
   padding: 64px 0;
 }
 
+.about-description {
+  width: 50vw;
+}
+
 .img-profile-head {
-  width: 200px;
+  min-width: 200px;
+  width: 30vw;
 
   border: 2px solid $color01;
   border-radius: 50%;
