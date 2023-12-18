@@ -24,17 +24,14 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
-  padding: 64px 0;
 }
 
 .about-description {
-  width: 50vw;
+  width: 50%;
 }
 
 .img-profile-head {
   min-width: 200px;
-  width: 30vw;
   max-width: 350px;
 
   border: 2px solid $color01;
@@ -43,5 +40,4 @@
   background-color: rgba($color01, 0.2);
 
   box-shadow: 0 0 16px $color01;
-  // filter: drop-shadow(0 0 16px $color01);
 }
