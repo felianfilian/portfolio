@@ -1,18 +1,21 @@
 @import "src/assets/global-scss.scss";
 
-.main-header {
+#main-header {
   box-sizing: border-box;
-
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 
-  width: 100%;
   min-height: 50px;
 
   padding: 12px 0px;
 
   background-color: $bg01;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-name {

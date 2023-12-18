@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin: 0;
 }
@@ -49,13 +49,30 @@ section {
   margin-top: 32px 0;
 }
 
-.section-content {
+.width-20p {
+  width: 20%;
+}
+
+.width-40p {
+  width: 40%;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.section-area {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding-top: 16px;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
+}
+
+.content-width {
+  width: 992px;
 }
 
 .text-block {
