@@ -2,19 +2,35 @@
 
 #section-hero {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-title {
+  position: relative;
+  width: 400px;
+}
+
+.hero-vertical {
+  rotate: 270deg;
+  position: absolute;
+  top: 40px;
+  left: -70px;
+}
+
+.hero-image {
   display: flex;
   justify-content: center;
 }
 
 .img-profile {
-  max-width: 600px;
-  border: 50xp solid $bg01;
+  max-width: 400px;
+  border: 5px solid $bg01;
   border-bottom-right-radius: 50%;
 }
