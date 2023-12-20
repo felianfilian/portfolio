@@ -1,17 +1,5 @@
 @import "src/assets/global-scss.scss";
 
-.title-line {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 16px;
-}
-
-.bg-line {
-  background-color: $color02;
-  height: 4px;
-}
-
 #project-list {
   display: flex;
   flex-direction: column;

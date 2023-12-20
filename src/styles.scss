@@ -77,23 +77,18 @@ section {
   width: 40%;
 }
 
-.v-center {
-  display: flex;
-  align-items: center;
-}
-
 .section-area {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding-top: 16px;
-  padding-bottom: 32px;
+  padding: 16px 32px 32px 32px;
 }
 
 // global content width
 .content-width {
-  width: 992px;
+  width: 928px;
+  margin: 0 32px;
 }
 
 // blocks with many lines of text
@@ -106,4 +101,32 @@ section {
 .first-letter {
   color: $color01;
   font-size: 1.3em;
+}
+
+// section title
+.title-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title-left {
+  justify-content: flex-start;
+}
+
+.title-right {
+  justify-content: flex-end;
+}
+
+// section bg line
+.bg-line {
+  background-color: $color02;
+  height: 4px;
+}
+
+@media (max-width: 992px) {
+  .content-width {
+    width: 100%;
+    max-width: 928px;
+  }
 }
