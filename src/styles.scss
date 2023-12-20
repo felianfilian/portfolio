@@ -45,16 +45,18 @@ p {
   margin: 0;
 }
 
-a {
-  transition: filter 0.3s ease-in-out;
-}
-
-a:hover {
-  filter: drop-shadow(0 0 8px #fff);
-}
-
 section {
   margin-top: 32px 0;
+}
+
+.my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.my-32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .fs-16 {
@@ -77,12 +79,47 @@ section {
   width: 40%;
 }
 
+.v-center {
+  display: flex;
+  justify-content: center;
+}
+
+.h-center {
+  display: flex;
+  justify-content: center;
+}
+
 .section-area {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding: 16px 32px 32px 32px;
+}
+
+// basic link styling
+.a-01 {
+  transition: filter 0.3s ease-in-out;
+}
+
+.a-01:hover {
+  filter: drop-shadow(0 0 8px #fff);
+}
+
+// basic button
+.button-01 {
+  padding: 12px 24px;
+
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.button-01:hover {
+  transform: scale(1.2);
+  background-color: $color02;
 }
 
 // global content width
@@ -100,6 +137,12 @@ section {
 // First letter of the name in green
 .first-letter {
   color: $color01;
+  font-size: 1.3em;
+}
+
+// First letter of the name in blue
+.first-letter-blue {
+  color: $color02;
   font-size: 1.3em;
 }
 

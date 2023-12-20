@@ -17,9 +17,10 @@
 
 .hero-title {
   position: absolute;
-  top: 35vh;
+  top: 20vh;
   right: 0;
   width: 400px;
+  filter: drop-shadow(0 0 8px $bg01);
 }
 
 .hero-subtitle {
@@ -39,6 +40,10 @@
 }
 
 .img-profile {
+  height: 80vh;
+
+  margin-left: -60px;
+
   border: 5px solid $bg01;
   border-bottom-right-radius: 50%;
 }
@@ -58,12 +63,12 @@
   padding: 0 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hero-title {
     position: absolute;
     top: unset;
-    bottom: 20vh;
-    left: 20vw;
+    bottom: 15vh;
+    left: 30vw;
   }
   .img-profile {
     width: auto;
