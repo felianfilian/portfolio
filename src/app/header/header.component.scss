@@ -28,6 +28,10 @@
   gap: 20px;
 }
 
+.menu-burger {
+  display: none;
+}
+
 #main-menu a {
   text-decoration: none;
   color: #fff;
@@ -38,22 +42,46 @@
 }
 
 .menu-close {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  padding: 12px;
+
+  background-color: #fff;
+  font-size: 48px;
+}
+
+.menu-close:hover {
+  background-color: $color01;
 }
 
 @media (max-width: 768px) {
+  .menu-burger {
+    display: flex;
+  }
+
   #main-menu {
     position: absolute;
     top: 0;
     right: 0;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
     gap: 48px;
 
     padding: 24px 48px;
 
     background-color: rgba($color: #000000, $alpha: 1);
     font-size: 36px;
+  }
+
+  .menu-close {
+    display: flex;
   }
 }
