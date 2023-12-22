@@ -55,12 +55,22 @@
 
   display: flex;
   align-items: center;
+  gap: 16px;
+}
+
+.social-buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .icon-down {
   width: 30px;
   height: 30px;
-  padding: 0 16px;
 }
 
 @media (max-width: 768px) {
@@ -85,7 +95,14 @@
   .img-profile {
     width: auto;
   }
-  .scroll-info {
+  .scroll-info,
+  .social-buttons {
     bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .social-buttons {
+    display: none;
   }
 }
