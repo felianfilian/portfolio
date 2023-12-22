@@ -63,14 +63,29 @@
   padding: 0 16px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 800px) {
+  .hero-vertical {
+    display: none;
+  }
   .hero-title {
+    box-sizing: border-box;
+
     position: absolute;
     top: unset;
-    bottom: 15vh;
-    left: 30vw;
+    bottom: 5vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 24px;
+    text-align: center;
   }
   .img-profile {
     width: auto;
+  }
+  .scroll-info {
+    bottom: 20px;
   }
 }
