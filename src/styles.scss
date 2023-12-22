@@ -130,8 +130,13 @@ section {
 
 .btn-hero {
   color: white;
-
+  background-color: $color02;
   transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.btn-hero:hover {
+  transform: scale(1.2);
+  background-color: unset;
 }
 
 .btn-blue {
@@ -143,11 +148,6 @@ section {
 .btn-hollow {
   border: 2px solid $color01;
   color: #fff;
-}
-
-.btn-hero:hover {
-  transform: scale(1.2);
-  background-color: $color02;
 }
 
 .btn-blue:hover {
