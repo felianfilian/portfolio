@@ -117,18 +117,50 @@ section {
 
 // basic button
 .button-01 {
+  min-width: 90px;
+
   padding: 12px 24px;
 
   border: 2px solid white;
   border-radius: 8px;
-  color: white;
   text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-hero {
+  color: white;
+
   transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
-.button-01:hover {
+.btn-blue {
+  background-color: $color02;
+  border: 2px solid $color02;
+  color: #fff;
+}
+
+.btn-hollow {
+  border: 2px solid $color01;
+  color: #fff;
+}
+
+.btn-hero:hover {
   transform: scale(1.2);
   background-color: $color02;
+}
+
+.btn-blue:hover {
+  background-color: unset;
+  border: 2px solid $color01;
+  color: #fff;
+}
+
+.btn-hollow:hover {
+  background-color: $color02;
+  border: 2px solid $color02;
+
+  color: #fff;
 }
 
 // global content width
