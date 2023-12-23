@@ -10,18 +10,24 @@
 
 .portfolio-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 16px;
 
-  width: 90%;
+  width: 100%;
 
   margin-bottom: 12px;
-  padding: 12px 24px;
+  padding: 32px 24px;
+}
+
+.card-reversed {
+  flex-direction: row-reverse;
 }
 
 .card-text {
   flex-grow: 1;
-  max-width: 400px;
+
+  min-width: 350px;
+  max-width: 45%;
 }
 
 .card-subtitle {
@@ -31,10 +37,13 @@
 .card-img {
   display: flex;
   justify-content: center;
+
+  width: 50%;
 }
 
 .img-project {
   object-fit: contain;
+  min-width: 350px;
   width: 100%;
 }
 
@@ -44,21 +53,37 @@
   gap: 16px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 800px) {
   .portfolio-card {
     flex-wrap: wrap;
     justify-content: center;
+
+    padding: 32px 0;
+
+    border-top: 3px solid $color01;
   }
+
+  .card-img {
+    width: 80%;
+  }
+
+  .card-text {
+    min-width: unset;
+    max-width: unset;
+    width: 80%;
+    text-align: center;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
   .card-title {
     text-align: center;
   }
   .card-subtitle {
     text-align: center;
-  }
-  .card-img {
-    width: 100%;
-  }
-  .img-project {
-    width: 90%;
   }
 }
