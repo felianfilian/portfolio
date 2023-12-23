@@ -1,7 +1,14 @@
+@import "src/assets/global-scss.scss";
+
 #main-footer {
   box-sizing: border-box;
+
   display: flex;
   justify-content: center;
+
+  padding: 32px 0;
+
+  border-top: 3px solid $color01;
 }
 
 .footer-content {
@@ -9,7 +16,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .social-links {
   display: flex;
   gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 }
