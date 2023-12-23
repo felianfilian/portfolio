@@ -10,10 +10,12 @@
       (click)="showMenu()"
     />
     <div id="main-menu">
-      <a class="menu-close a-01">X</a>
-      <a class="a-01" href="#section-about">About me</a>
-      <a class="a-01" href="#section-skills">Skills</a>
-      <a class="a-01" href="#section-portfolio">Portfolio</a>
+      <a class="menu-close a-01" (click)="closeMenu()">X</a>
+      <a class="a-01" href="#section-about" (click)="closeMenu()">About me</a>
+      <a class="a-01" href="#section-skills" (click)="closeMenu()">Skills</a>
+      <a class="a-01" href="#section-portfolio" (click)="closeMenu()"
+        >Portfolio</a
+      >
     </div>
   </div>
 </section>

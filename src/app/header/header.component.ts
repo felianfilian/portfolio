@@ -15,7 +15,7 @@ export class HeaderComponent {
   closeMenu() {
     let mainMenu = document.getElementById('main-menu');
     if (mainMenu != null) {
-      mainMenu.style.display = 'flex';
+      mainMenu.style.display = 'none';
     }
   }
 }
