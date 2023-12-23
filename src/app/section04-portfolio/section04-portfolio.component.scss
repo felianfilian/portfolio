@@ -19,7 +19,7 @@
   padding: 32px 24px;
 }
 
-.card-reversed {
+.card-reverse {
   flex-direction: row-reverse;
 }
 
@@ -54,12 +54,18 @@
 }
 
 @media (max-width: 800px) {
+  #project-list:first-child {
+    border: unset !important;
+  }
+
   .portfolio-card {
     flex-wrap: wrap;
     justify-content: center;
 
     padding: 32px 0;
+  }
 
+  .portfolio-divider {
     border-top: 3px solid $color01;
   }
 
