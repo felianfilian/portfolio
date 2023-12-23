@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   showMenu() {
-    alert('show');
+    let mainMenu = document.getElementById('main-menu');
+    if (mainMenu != null) {
+      mainMenu.style.display = 'flex';
+    }
+  }
+  closeMenu() {
     let mainMenu = document.getElementById('main-menu');
     if (mainMenu != null) {
       mainMenu.style.display = 'flex';
