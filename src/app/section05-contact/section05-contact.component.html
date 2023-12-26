@@ -12,8 +12,8 @@
     </div>
     <form (submit)="sendMail()" method="post" #myForm>
       <input type="text" placeholder="name" #namefield />
-      <input type="text" placeholder="email" #mailfield />
-      <input type="text" placeholder="message" #messagefield />
+      <input type="email" placeholder="email" #mailfield />
+      <textarea rows="5" placeholder="message" #messagefield></textarea>
       <input
         class="button-01 btn-blue"
         type="submit"
