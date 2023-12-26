@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-section05-contact',
@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./section05-contact.component.scss'],
 })
 export class Section05ContactComponent {
-  sendMail() {
-    alert('Mail sended');
-  }
+  @ViewChild('myForm') myForm!: ElementRef;
+  async sendMail() {}
 }
