@@ -10,6 +10,7 @@ import { Section02AboutComponent } from './section02-about/section02-about.compo
 import { Section03SkillsComponent } from './section03-skills/section03-skills.component';
 import { Section04PortfolioComponent } from './section04-portfolio/section04-portfolio.component';
 import { Section05ContactComponent } from './section05-contact/section05-contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,10 @@ import { Section05ContactComponent } from './section05-contact/section05-contact
     Section02AboutComponent,
     Section03SkillsComponent,
     Section04PortfolioComponent,
-    Section05ContactComponent
+    Section05ContactComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

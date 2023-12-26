@@ -17,9 +17,23 @@ export class Section05ContactComponent {
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
+    // disable form fields
     nameField.disabled = true;
     mailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
+    let fd = new FormData();
+    fd.append('name', nameField.value);
+    fd.append('name', mailField.value);
+    fd.append('name', messageField.value);
+    await fetch('https://dennis-schmalstieg.de/tools/send_mail', {
+      method: 'POST',
+      body: fd,
+    });
+    // activate form fields
+    nameField.disabled = false;
+    mailField.disabled = false;
+    messageField.disabled = false;
+    sendButton.disabled = false;
   }
 }
