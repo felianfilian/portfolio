@@ -12,7 +12,6 @@ export class Section05ContactComponent {
   @ViewChild('messagefield') messageField!: ElementRef;
   @ViewChild('sendbutton') sendButton!: ElementRef;
   async sendMail() {
-    alert('Start Mail Send');
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
@@ -31,6 +30,10 @@ export class Section05ContactComponent {
       body: fd,
     });
     // activate form fields
+    nameField.value = '';
+    mailField.value = '';
+    messageField.value = '';
+    alert('Mail Sended');
     nameField.disabled = false;
     mailField.disabled = false;
     messageField.disabled = false;
