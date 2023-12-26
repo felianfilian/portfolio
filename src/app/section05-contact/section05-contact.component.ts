@@ -7,5 +7,14 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class Section05ContactComponent {
   @ViewChild('myForm') myForm!: ElementRef;
-  async sendMail() {}
+  @ViewChild('namefield') nameField!: ElementRef;
+  @ViewChild('mailfield') mailField!: ElementRef;
+  @ViewChild('messagefield') messageField!: ElementRef;
+  @ViewChild('sendbutton') sendButton!: ElementRef;
+  async sendMail() {
+    let nameField = this.nameField.nativeElement;
+    let mailField = this.mailField.nativeElement;
+    let messageField = this.messageField.nativeElement;
+    let sendButtonField = this.sendButton.nativeElement;
+  }
 }
