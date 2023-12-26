@@ -146,13 +146,19 @@ section {
   color: #fff;
 }
 
-.btn-hollow {
+.btn-blue:hover {
+  background-color: unset;
   border: 2px solid $color01;
   color: #fff;
 }
 
-.btn-blue:hover {
-  background-color: unset;
+.btn-blue:disabled {
+  background-color: grey;
+  border: 2px solid $color01;
+  color: rgb(181, 181, 181);
+}
+
+.btn-hollow {
   border: 2px solid $color01;
   color: #fff;
 }
