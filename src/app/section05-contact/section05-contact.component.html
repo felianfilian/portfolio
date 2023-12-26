@@ -11,10 +11,10 @@
       <p>Look forward to hearing from you!</p>
     </div>
     <form (submit)="sendMail()" method="post" #myForm>
-      <input type="text" placeholder="name" />
-      <input type="text" placeholder="email" />
-      <input type="text" placeholder="message" />
-      <input type="submit" value="senden" />
+      <input type="text" placeholder="name" #namefield />
+      <input type="text" placeholder="email" #mailfield />
+      <input type="text" placeholder="message" #messagefield />
+      <input type="submit" value="senden" #sendbutton />
     </form>
   </div>
 </section>
