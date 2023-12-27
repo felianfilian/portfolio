@@ -33,7 +33,6 @@ export class Section05ContactComponent {
     nameField.value = '';
     mailField.value = '';
     messageField.value = '';
-    alert('Mail Sended');
     nameField.disabled = false;
     mailField.disabled = false;
     messageField.disabled = false;
