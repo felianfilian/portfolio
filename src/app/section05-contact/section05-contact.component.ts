@@ -23,9 +23,9 @@ export class Section05ContactComponent {
     sendButton.disabled = true;
     let fd = new FormData();
     fd.append('name', nameField.value);
-    fd.append('name', mailField.value);
-    fd.append('name', messageField.value);
-    await fetch('https://dennis-schmalstieg.de/tools/send_mail', {
+    fd.append('mail', mailField.value);
+    fd.append('message', messageField.value);
+    await fetch('https://dennis-schmalstieg.de/tools/send_mail/send_mail.php', {
       method: 'POST',
       body: fd,
     });
