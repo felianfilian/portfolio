@@ -221,3 +221,18 @@ section {
     max-width: 928px;
   }
 }
+
+@media (max-width: 576px) {
+  .text-block {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .width-20p {
+    width: 10%;
+  }
+
+  .width-40p {
+    width: 20%;
+  }
+}
