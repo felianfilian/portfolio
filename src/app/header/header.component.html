@@ -10,7 +10,15 @@
       (click)="showMenu()"
     />
     <div id="main-menu">
-      <a class="menu-close a-01" (click)="closeMenu()">X</a>
+      <div class="menu-close">
+        <div class="fs-24"><span class="first-letter">D</span>ENNIS</div>
+        <img
+          class="menu-burger"
+          src="./assets/icons/menü-50.png"
+          alt="X"
+          (click)="closeMenu()"
+        />
+      </div>
       <a class="a-01" href="#section-about" (click)="closeMenu()">About me</a>
       <a class="a-01" href="#section-skills" (click)="closeMenu()">Skills</a>
       <a class="a-01" href="#section-portfolio" (click)="closeMenu()"

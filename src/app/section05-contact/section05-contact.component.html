@@ -10,10 +10,15 @@
       <p>Feel free to reach out for inquiries, feedback, or collaborations.</p>
       <p>Look forward to hearing from you!</p>
     </div>
-    <form (submit)="sendMail()" method="post" #myForm>
-      <input type="text" placeholder="name" #namefield />
-      <input type="email" placeholder="email" #mailfield />
-      <textarea rows="5" placeholder="message" #messagefield></textarea>
+    <form (submit)="sendMail()" method="post" #myForm ngNativeValidate>
+      <input type="text" placeholder="name" #namefield required />
+      <input type="email" placeholder="email" #mailfield required />
+      <textarea
+        rows="5"
+        placeholder="message"
+        #messagefield
+        required
+      ></textarea>
       <input
         class="button-01 btn-blue"
         type="submit"
