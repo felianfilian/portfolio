@@ -7,3 +7,7 @@
 <app-section05-contact></app-section05-contact>
 
 <app-footer></app-footer>
+
+<div #messageBox *ngIf="displayMessage" class="message-box">
+  <div #messageCard class="message-card">{{ myMessage }}</div>
+</div>

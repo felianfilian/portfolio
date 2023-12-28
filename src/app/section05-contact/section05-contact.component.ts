@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-section05-contact',
@@ -11,6 +12,9 @@ export class Section05ContactComponent {
   @ViewChild('mailfield') mailField!: ElementRef;
   @ViewChild('messagefield') messageField!: ElementRef;
   @ViewChild('sendbutton') sendButton!: ElementRef;
+
+  constructor(private appComponent: AppComponent) {}
+
   async sendMail() {
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
@@ -29,6 +33,8 @@ export class Section05ContactComponent {
       method: 'POST',
       body: fd,
     });
+    // mail sended message
+    this.appComponent.showMessage('mail sended');
     // activate form fields
     nameField.value = '';
     mailField.value = '';
