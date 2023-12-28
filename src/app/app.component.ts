@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,16 +15,20 @@ export class AppComponent {
   messageDelay: number | undefined;
   displayMessage = false;
 
+  constructor(private scroller: ViewportScroller) {}
+
   showMessage(message: string, delay: number = 2, bgColor = '#2a3647') {
     this.myMessage = message;
     this.messageDelay = delay * 1000;
-    //this.messageCard.nativeElement.style.backgroundColor = bgColor;
 
     this.displayMessage = true;
-    // this.messageBox.nativeElement.classList.remove('d-none');
+
     setTimeout(() => {
       this.displayMessage = false;
-      // this.messageBox.nativeElement.classList.add('d-none');
     }, this.messageDelay);
+  }
+
+  gotoSection(section: string) {
+    this.scroller.scrollToAnchor(section);
   }
 }

@@ -36,6 +36,13 @@
   gap: 20px;
 }
 
+#mobile-menu {
+  display: none;
+  justify-content: space-between;
+  gap: 20px;
+  animation: dropDown 0.3s ease-in;
+}
+
 #main-menu a {
   text-decoration: none;
   color: #fff;
@@ -69,19 +76,33 @@
   filter: drop-shadow(0 0 8px #fff);
 }
 
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
 @media (max-width: 768px) {
   .menu-burger {
     display: flex;
   }
 
   #main-menu {
+    display: none;
+  }
+
+  #mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
 
-    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

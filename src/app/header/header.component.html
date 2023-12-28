@@ -10,6 +10,11 @@
       (click)="showMenu()"
     />
     <div id="main-menu">
+      <a class="a-01" (click)="gotoSection('section-about')">About me</a>
+      <a class="a-01" (click)="gotoSection('section-skills')">Skills</a>
+      <a class="a-01" (click)="gotoSection('section-portfolio')">Portfolio</a>
+    </div>
+    <div id="mobile-menu">
       <div class="menu-close">
         <div class="fs-24"><span class="first-letter">D</span>ENNIS</div>
         <img
@@ -19,14 +24,15 @@
           (click)="closeMenu()"
         />
       </div>
-      <a
-        class="a-01"
-        fragment="section-about"
-        (click)="navigateToSection('section-about')"
+      <a class="a-01" (click)="gotoSection('section-about'); closeMenu()"
         >About me</a
       >
-      <a class="a-01" href="#skills">Skills</a>
-      <a class="a-01" href="#section-portfolio">Portfolio</a>
+      <a class="a-01" (click)="gotoSection('section-skills'); closeMenu()"
+        >Skills</a
+      >
+      <a class="a-01" (click)="gotoSection('section-portfolio'); closeMenu()"
+        >Portfolio</a
+      >
     </div>
   </div>
 </section>
