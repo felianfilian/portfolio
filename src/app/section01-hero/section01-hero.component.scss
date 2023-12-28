@@ -74,6 +74,17 @@
   height: 30px;
 }
 
+@media (max-width: 992px) {
+  .hero-title {
+    position: absolute;
+    top: unset;
+    bottom: 15vh;
+    right: 0;
+    width: 400px;
+    filter: drop-shadow(0 0 8px $bg01);
+  }
+}
+
 @media (max-width: 768px) {
   .hero-vertical {
     display: none;
@@ -81,7 +92,6 @@
   .hero-title {
     box-sizing: border-box;
 
-    position: absolute;
     top: unset;
     bottom: 5vh;
     width: 100%;

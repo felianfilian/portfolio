@@ -18,4 +18,8 @@ export class HeaderComponent {
       mainMenu.style.display = 'none';
     }
   }
+  navigateToSection(section: string) {
+    window.location.hash = '';
+    window.location.hash = section;
+  }
 }
