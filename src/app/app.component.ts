@@ -1,5 +1,4 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +14,6 @@ export class AppComponent {
   messageDelay: number | undefined;
   displayMessage = false;
 
-  constructor(private scroller: ViewportScroller) {}
-
   showMessage(message: string, delay: number = 2, bgColor = '#2a3647') {
     this.myMessage = message;
     this.messageDelay = delay * 1000;
@@ -26,9 +23,5 @@ export class AppComponent {
     setTimeout(() => {
       this.displayMessage = false;
     }, this.messageDelay);
-  }
-
-  gotoSection(section: string) {
-    this.scroller.scrollToAnchor(section);
   }
 }
