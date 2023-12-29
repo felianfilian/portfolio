@@ -10,7 +10,10 @@
       (click)="showMenu()"
     />
     <div id="main-menu">
-      <a class="a-01" (click)="gotoSection('section-about')">About me</a>
+      <a class="a-01" (click)="gotoSection('section-about')">
+        <span *ngIf="lang == 'eng'">About me</span>
+        <span *ngIf="lang == 'ger'">Über mich</span>
+      </a>
       <a class="a-01" (click)="gotoSection('section-skills')">Skills</a>
       <a class="a-01" (click)="gotoSection('section-portfolio')">Portfolio</a>
       <img
@@ -18,12 +21,14 @@
         src="./assets/languages/ger.jpg"
         alt="DEU"
         (click)="changeLang('ger')"
+        *ngIf="lang == 'eng'"
       />
       <img
         class="lang-button"
         src="./assets/languages/eng.jpg"
         alt="DEU"
-        (click)="changeLang('ger')"
+        (click)="changeLang('eng')"
+        *ngIf="lang == 'ger'"
       />
     </div>
     <div id="mobile-menu">
@@ -36,9 +41,10 @@
           (click)="closeMenu()"
         />
       </div>
-      <a class="a-01" (click)="gotoSection('section-about'); closeMenu()"
-        >About me</a
-      >
+      <a class="a-01" (click)="gotoSection('section-about'); closeMenu()">
+        <span *ngIf="lang == 'eng'">About me</span>
+        <span *ngIf="lang == 'ger'">Über mich</span>
+      </a>
       <a class="a-01" (click)="gotoSection('section-skills'); closeMenu()"
         >Skills</a
       >

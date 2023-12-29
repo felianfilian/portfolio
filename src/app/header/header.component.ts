@@ -27,5 +27,7 @@ export class HeaderComponent {
     this.scroller.scrollToAnchor(section);
   }
 
-  changeLang(newLang: string) {}
+  changeLang(newLang: string) {
+    this.lang = newLang;
+  }
 }
