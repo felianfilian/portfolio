@@ -12,15 +12,15 @@ export class HeaderComponent {
   constructor(private scroller: ViewportScroller) {}
 
   showMenu() {
-    let mainMenu = document.getElementById('mobile-menu');
-    if (mainMenu != null) {
-      mainMenu.style.display = 'flex';
+    let mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu != null) {
+      mobileMenu.style.display = 'flex';
     }
   }
   closeMenu() {
-    let mainMenu = document.getElementById('mobile-menu');
-    if (mainMenu != null) {
-      mainMenu.style.display = 'none';
+    let mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu != null) {
+      mobileMenu.style.display = 'none';
     }
   }
   gotoSection(section: string) {
