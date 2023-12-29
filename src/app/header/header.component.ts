@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  lang: string = 'eng';
+
   constructor(private scroller: ViewportScroller) {}
 
   showMenu() {
@@ -24,4 +26,6 @@ export class HeaderComponent {
   gotoSection(section: string) {
     this.scroller.scrollToAnchor(section);
   }
+
+  changeLang(newLang: string) {}
 }

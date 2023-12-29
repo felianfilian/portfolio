@@ -76,6 +76,15 @@
   filter: drop-shadow(0 0 8px #fff);
 }
 
+.lang-button {
+  width: auto;
+  height: 24px;
+}
+
+.lang-button:hover {
+  filter: drop-shadow(0 0 8px #fff);
+}
+
 @keyframes dropDown {
   0% {
     opacity: 0;
