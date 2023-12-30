@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
 
-  height: 90vh;
+  height: 90dvh;
 
   padding-top: 10vh;
 }
@@ -113,7 +113,28 @@
 }
 
 @media (max-width: 450px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .img-profile {
+    margin-top: 5vh;
+  }
+
   .social-buttons {
+    width: 100%;
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .scroll-text {
     display: none;
+  }
+
+  .icon-down {
+    width: 36px;
+    height: 36px;
   }
 }

@@ -216,17 +216,31 @@ section {
   height: 4px;
 }
 
-@media (max-width: 992px) {
-  .content-width {
-    width: 100%;
-    max-width: 928px;
-  }
+// custom scrollbar for mozilla
+* {
+  scrollbar-color: $color02 $color01;
+  scrollbar-width: bold;
+}
+
+// custom scrollbar for all other browsers
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: $color01;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $color02;
 }
 
 @media (max-width: 576px) {
   .text-block {
     justify-content: center;
     text-align: center;
+  }
+
+  .my-32 {
+    margin: 16px 0 32px 0;
   }
 
   .width-20p {
