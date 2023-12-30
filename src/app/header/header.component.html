@@ -41,20 +41,7 @@
           (click)="closeMenu()"
         />
       </div>
-      <img
-        class="lang-button"
-        src="./assets/languages/ger.jpg"
-        alt="DEU"
-        (click)="changeLang('ger')"
-        *ngIf="gs.lang == 'eng'"
-      />
-      <img
-        class="lang-button"
-        src="./assets/languages/eng.jpg"
-        alt="DEU"
-        (click)="changeLang('eng')"
-        *ngIf="gs.lang == 'ger'"
-      />
+
       <a class="a-01" (click)="gotoSection('section-about'); closeMenu()">
         <span *ngIf="gs.lang == 'eng'">About me</span>
         <span *ngIf="gs.lang == 'ger'">Über mich</span>
@@ -65,6 +52,20 @@
       <a class="a-01" (click)="gotoSection('section-portfolio'); closeMenu()"
         >Portfolio</a
       >
+      <img
+        class="lang-button-mobile"
+        src="./assets/languages/ger.jpg"
+        alt="DEU"
+        (click)="changeLang('ger')"
+        *ngIf="gs.lang == 'eng'"
+      />
+      <img
+        class="lang-button-mobile"
+        src="./assets/languages/eng.jpg"
+        alt="DEU"
+        (click)="changeLang('eng')"
+        *ngIf="gs.lang == 'ger'"
+      />
     </div>
   </div>
 </section>

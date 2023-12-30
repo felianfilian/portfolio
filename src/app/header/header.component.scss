@@ -85,6 +85,16 @@
   filter: drop-shadow(0 0 8px #fff);
 }
 
+.lang-button-mobile {
+  width: 72px;
+  height: 48px;
+  margin-top: 32px;
+}
+
+.lang-button-mobile:hover {
+  filter: drop-shadow(0 0 8px #fff);
+}
+
 @keyframes dropDown {
   0% {
     opacity: 0;
