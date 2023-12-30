@@ -11,8 +11,8 @@
     />
     <div id="main-menu">
       <a class="a-01" (click)="gotoSection('section-about')">
-        <span *ngIf="lang == 'eng'">About me</span>
-        <span *ngIf="lang == 'ger'">Über mich</span>
+        <span *ngIf="gs.lang == 'eng'">About me</span>
+        <span *ngIf="gs.lang == 'ger'">Über mich</span>
       </a>
       <a class="a-01" (click)="gotoSection('section-skills')">Skills</a>
       <a class="a-01" (click)="gotoSection('section-portfolio')">Portfolio</a>
@@ -21,14 +21,14 @@
         src="./assets/languages/ger.jpg"
         alt="DEU"
         (click)="changeLang('ger')"
-        *ngIf="lang == 'eng'"
+        *ngIf="gs.lang == 'eng'"
       />
       <img
         class="lang-button"
         src="./assets/languages/eng.jpg"
         alt="DEU"
         (click)="changeLang('eng')"
-        *ngIf="lang == 'ger'"
+        *ngIf="gs.lang == 'ger'"
       />
     </div>
     <div id="mobile-menu">

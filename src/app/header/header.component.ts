@@ -1,5 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,9 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   lang: string = 'eng';
 
-  constructor(private scroller: ViewportScroller) {}
+  constructor(private scroller: ViewportScroller, public gs: GlobalService) {
+    this.lang = gs.lang;
+  }
 
   showMenu() {
     let mobileMenu = document.getElementById('mobile-menu');
@@ -28,6 +31,6 @@ export class HeaderComponent {
   }
 
   changeLang(newLang: string) {
-    this.lang = newLang;
+    this.gs.lang = newLang;
   }
 }

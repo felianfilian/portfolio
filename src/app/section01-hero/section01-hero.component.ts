@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppComponent } from '../app.component';
 import { ViewportScroller } from '@angular/common';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-section01-hero',
@@ -8,7 +9,11 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['./section01-hero.component.scss'],
 })
 export class Section01HeroComponent {
-  constructor(private scroller: ViewportScroller) {}
+  lang: string = 'eng';
+
+  constructor(private scroller: ViewportScroller, public gs: GlobalService) {
+    this.lang = gs.lang;
+  }
 
   gotoSection(section: string) {
     this.scroller.scrollToAnchor(section);
