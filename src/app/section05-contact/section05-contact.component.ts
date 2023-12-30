@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AppComponent } from '../app.component';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-section05-contact',
@@ -13,7 +14,11 @@ export class Section05ContactComponent {
   @ViewChild('messagefield') messageField!: ElementRef;
   @ViewChild('sendbutton') sendButton!: ElementRef;
 
-  constructor(private appComponent: AppComponent) {}
+  lang: string = 'eng';
+
+  constructor(private appComponent: AppComponent, public gs: GlobalService) {
+    this.lang = gs.lang;
+  }
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;

@@ -2,7 +2,10 @@
 <section>
   <div class="title-line title-right">
     <div class="bg-line width-20p"></div>
-    <h2 class="dark-bg">About Me</h2>
+    <h2 class="dark-bg">
+      <span *ngIf="gs.lang == 'eng'">About Me</span>
+      <span *ngIf="gs.lang == 'ger'">Über mich</span>
+    </h2>
     <div class="bg-line width-40p"></div>
   </div>
 
@@ -10,14 +13,22 @@
     <div class="about-container content-width">
       <div class="about-description text-block">
         <p>
-          I'm a skilled professional based in Hannover, specializing in HTML,
-          CSS, JavaScript, TypeScript, and Angular.
+          <span *ngIf="gs.lang == 'eng'"
+            >I'm a skilled professional based in Hannover, specializing in HTML,
+            CSS, JavaScript, TypeScript, and Angular.
+            <br />
+            With a commitment to writing clean and a keen eye for good design, I
+            bring creativity and technical expertise to every project.
+          </span>
+          <span *ngIf="gs.lang == 'ger'"
+            >Als erfahrener Entwickler aus Hannover habe ich mich auf HTML, CSS,
+            Javascript, typescript und Angular spezialisiert
+            <br />
+            Mit dem Anspruch für sauberen Code und perfektes Design, bringe ich
+            Kreativität und und technisches Fachwissen in jedes Projekt mit ein.
+          </span>
         </p>
-        <p>
-          With a commitment to writing clean and a keen eye for good design,
-          efficient code, I bring creativity and technical expertise to every
-          project.
-        </p>
+        <p></p>
 
         <div class="benefit-container">
           <img
@@ -26,9 +37,17 @@
             alt=""
           />
           <p>
-            With an unwavering love for programming, I specialize in web
-            development, architecting responsive, user-centric websites that
-            merge functionality and aesthetics seamlessly.
+            <span *ngIf="gs.lang == 'eng'">
+              With an unwavering love for programming, I specialize in web
+              development. My goals are architecting responsive, user-centric
+              websites that merge functionality and aesthetics seamlessly.
+            </span>
+            <span *ngIf="gs.lang == 'ger'"
+              >Mit einer Leidenschaft zum Programmieren habe ich mich auf die
+              Web-Entwicklung spezialisiert. Meine Ziele sind eine weboptimierte
+              Architektur und benutzerfreundliche Websites, die Funktionalität
+              und Ästhetik nahtlos miteinander verbinden.</span
+            >
           </p>
         </div>
         <div class="benefit-container">
@@ -38,9 +57,15 @@
             alt=""
           />
           <p>
-            I thrive on solving complex challenges and turning ideas into
-            reality. Whether it's optimizing website performance or implementing
-            innovative features.
+            <span *ngIf="gs.lang == 'eng'"
+              >I thrive on solving ideas into reality. Whether it's optimizing
+              website performance or implementing innovative features.
+            </span>
+            <span *ngIf="gs.lang == 'ger'">
+              Ich liebe es, Ideen in die Realität umzusetzen, sei es durch die
+              Optimierung der Leistung einer Website oder die Implementierung
+              innovativer Funktionen.
+            </span>
           </p>
         </div>
       </div>

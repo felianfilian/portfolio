@@ -10,8 +10,14 @@
     <div class="content-width">
       <div class="text-block">
         <p>
-          I have grown my frontend developments skills that have allowed me to
-          create different real projects.
+          <span *ngIf="gs.lang == 'eng'">
+            I have grown my frontend developments skills that have allowed me to
+            create different real projects.
+          </span>
+          <span *ngIf="gs.lang == 'ger'">
+            Meine erlernten Frontend-Fähigkeiten, haben es mir ermöglicht
+            verschiedene reale Projekte zu realisieren.
+          </span>
         </p>
       </div>
 
