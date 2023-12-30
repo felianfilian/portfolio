@@ -42,7 +42,8 @@
       </a>
     </div>
     <div class="scroll-info">
-      <span>SCROLL DOWN</span>
+      <span *ngIf="gs.lang == 'eng'">Scroll Down</span>
+      <span *ngIf="gs.lang == 'ger'">herunterscollen</span>
       <img class="icon-down" src="./assets/buttons/down_white.png" alt="" />
     </div>
   </div>

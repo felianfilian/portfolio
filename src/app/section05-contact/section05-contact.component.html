@@ -7,15 +7,33 @@
 
   <div class="section-area">
     <div class="text-block">
-      <p>Feel free to reach out for inquiries, feedback, or collaborations.</p>
-      <p>Look forward to hearing from you!</p>
+      <span *ngIf="gs.lang == 'eng'">
+        Feel free to reach out for inquiries or feedback.
+        <br />
+        Look forward to hearing from you!
+      </span>
+      <span *ngIf="gs.lang == 'ger'">
+        Senden Sie mir gerne Anfragen oder Feedback.
+        <br />
+        Ich freue mich von Ihnen zu hören
+      </span>
     </div>
     <form (submit)="sendMail()" method="post" #myForm ngNativeValidate>
-      <input type="text" placeholder="name" #namefield required />
-      <input type="email" placeholder="email" #mailfield required />
+      <input
+        type="text"
+        [placeholder]="gs.lang == 'eng' ? 'name' : 'Name'"
+        #namefield
+        required
+      />
+      <input
+        type="email"
+        [placeholder]="gs.lang == 'eng' ? 'email' : 'E-Mail'"
+        #mailfield
+        required
+      />
       <textarea
         rows="5"
-        placeholder="message"
+        [placeholder]="gs.lang == 'eng' ? 'message' : 'Nachricht'"
         #messagefield
         required
       ></textarea>

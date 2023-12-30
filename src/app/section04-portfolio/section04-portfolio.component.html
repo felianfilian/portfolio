@@ -8,7 +8,12 @@
 
   <div class="section-area">
     <div class="text-block">
-      <p>samples of my work - please feel free to try them out</p>
+      <span *ngIf="gs.lang == 'eng'"
+        >samples of my work - please feel free to try them out</span
+      >
+      <span *ngIf="gs.lang == 'ger'"
+        >Meine Projekte - jedes Projekt kann online getestet werden</span
+      >
     </div>
 
     <div id="project-list">
@@ -24,10 +29,17 @@
           <h3 class="card-title">JOIN</h3>
           <h4 class="card-subtitle">JAVASCRIPT | HTML | CSS</h4>
           <div class="text-block">
-            <p>Task Manager with a kanban System</p>
-            <p>create and manage tasks</p>
-            <p>users can be set up and added to the tasks</p>
-            <p>this project is the result from a team of 3 progammers.</p>
+            <span *ngIf="gs.lang == 'eng'">
+              Task Manager with a kanban System. Create and manage tasks. Users
+              can be set up and added to the tasks. This project is the result
+              from a team of 3 progammers.
+            </span>
+            <span *ngIf="gs.lang == 'ger'">
+              Ein Task Manager mit einem Kanban-Board. Erstelle und verwalte
+              Aufgaben. Benutzer können angelegt und Aufgaben zugewiesen werden.
+              Dieses Projekt ist das Ergebns einer Teamarbeit mit insgesamt 3
+              Programmierern
+            </span>
           </div>
           <div class="project-links">
             <a
@@ -58,6 +70,8 @@
           <h3 class="card-title">El Pollo Loco</h3>
           <h4 class="card-subtitle">JAVASCRIPT | OOP | HTML | CSS</h4>
           <div class="text-block">
+            <span *ngIf="gs.lang == 'eng'">Frontend Developer</span>
+            <span *ngIf="gs.lang == 'ger'">Frontend Entwickler</span>
             <p>funny 2d platformer</p>
             <p>get rid of all the nasty chickens and defeat EL Pollo Loco</p>
           </div>
@@ -90,8 +104,16 @@
           <h3 class="card-title">PokeDex</h3>
           <h4 class="card-subtitle">JAVASCRIPT | API | HTML | CSS</h4>
           <div class="text-block">
-            <p>list of pokemons from an API</p>
-            <p>see details and stats for every pokemon</p>
+            <span *ngIf="gs.lang == 'eng'">
+              a database of pokemons from an API
+              <br />
+              With a view of details and stats for every pokemon
+            </span>
+            <span *ngIf="gs.lang == 'ger'">
+              Eine Datenbank mit Pokemon von einer offenen API.
+              <br />
+              Mit einer Detailanischt zu jedem Pokemon
+            </span>
           </div>
           <div class="project-links">
             <a
