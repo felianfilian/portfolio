@@ -9,7 +9,7 @@ body {
   background-color: $bg01;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 0.8px;
   line-height: 1.4;
 }
@@ -107,8 +107,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 16px 32px 32px 32px;
+  margin-top: 32px;
 }
 
 // basic link styling
@@ -179,8 +178,7 @@ section {
 // global content width
 .content-width {
   box-sizing: border-box;
-  width: 90%;
-  margin: 0 5%;
+  width: 1440px;
 }
 
 // blocks with many lines of text
@@ -237,6 +235,12 @@ section {
 }
 ::-webkit-scrollbar-thumb {
   background-color: $color02;
+}
+
+@media (max-width: 1540px) {
+  .content-width {
+    width: 90%;
+  }
 }
 
 @media (max-width: 992px) {

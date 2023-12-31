@@ -4,18 +4,22 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 16px;
 
-  gap: 128px;
+  margin-top: 32px;
 }
 
 .about-01-01 {
   flex: 1;
+
   min-width: 450px;
 }
 
 .about-01-02 {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   min-width: 450px;
+  gap: 32px;
 }
 
 .about-02 {
@@ -25,8 +29,6 @@
 .benefit-container {
   display: flex;
   align-items: center;
-
-  padding: 32px 0 0 64px;
 }
 
 .icon-benefit {
@@ -50,7 +52,6 @@
 @media (max-width: 992px) {
   .about-01 {
     justify-content: center;
-    width: 100%;
   }
 
   .about-02 {

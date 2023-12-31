@@ -6,43 +6,45 @@
   </div>
 
   <div class="section-area">
-    <div class="text-block">
-      <span *ngIf="gs.lang == 'eng'">
-        Feel free to reach out for inquiries or feedback.
-        <br />
-        Look forward to hearing from you!
-      </span>
-      <span *ngIf="gs.lang == 'ger'">
-        Senden Sie mir gerne Anfragen oder Feedback.
-        <br />
-        Ich freue mich von Ihnen zu hören
-      </span>
+    <div class="contact-01 content-width">
+      <div class="contact-01-01 text-block">
+        <span *ngIf="gs.lang == 'eng'">
+          Feel free to reach out for inquiries or feedback.
+          <br />
+          Look forward to hearing from you!
+        </span>
+        <span *ngIf="gs.lang == 'ger'">
+          Senden Sie mir gerne Anfragen oder Feedback.
+          <br />
+          Ich freue mich von Ihnen zu hören.
+        </span>
+      </div>
+      <form (submit)="sendMail()" method="post" #myForm ngNativeValidate>
+        <input
+          type="text"
+          [placeholder]="gs.lang == 'eng' ? 'name' : 'Name'"
+          #namefield
+          required
+        />
+        <input
+          type="email"
+          [placeholder]="gs.lang == 'eng' ? 'email' : 'E-Mail'"
+          #mailfield
+          required
+        />
+        <textarea
+          rows="5"
+          [placeholder]="gs.lang == 'eng' ? 'message' : 'Nachricht'"
+          #messagefield
+          required
+        ></textarea>
+        <input
+          class="button-01 btn-blue"
+          type="submit"
+          [value]="gs.lang == 'eng' ? 'Send Mail' : 'Nachricht senden'"
+          #sendbutton
+        />
+      </form>
     </div>
-    <form (submit)="sendMail()" method="post" #myForm ngNativeValidate>
-      <input
-        type="text"
-        [placeholder]="gs.lang == 'eng' ? 'name' : 'Name'"
-        #namefield
-        required
-      />
-      <input
-        type="email"
-        [placeholder]="gs.lang == 'eng' ? 'email' : 'E-Mail'"
-        #mailfield
-        required
-      />
-      <textarea
-        rows="5"
-        [placeholder]="gs.lang == 'eng' ? 'message' : 'Nachricht'"
-        #messagefield
-        required
-      ></textarea>
-      <input
-        class="button-01 btn-blue"
-        type="submit"
-        [value]="gs.lang == 'eng' ? 'Send Mail' : 'Nachricht senden'"
-        #sendbutton
-      />
-    </form>
   </div>
 </section>
