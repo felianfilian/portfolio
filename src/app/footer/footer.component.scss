@@ -17,6 +17,11 @@
   align-items: center;
 }
 
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
 .social-links {
   display: flex;
   gap: 16px;
