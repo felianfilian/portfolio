@@ -56,14 +56,14 @@
         class="lang-button-mobile"
         src="./assets/languages/ger.jpg"
         alt="DEU"
-        (click)="changeLang('ger')"
+        (click)="changeLang('ger'); closeMenu()"
         *ngIf="gs.lang == 'eng'"
       />
       <img
         class="lang-button-mobile"
         src="./assets/languages/eng.jpg"
         alt="DEU"
-        (click)="changeLang('eng')"
+        (click)="changeLang('eng'); closeMenu()"
         *ngIf="gs.lang == 'ger'"
       />
     </div>
