@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 120px;
+  flex-basis: 200px;
   gap: 8px;
 
   padding: 16px;
@@ -39,6 +39,12 @@
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 992px) {
+  .skill-element {
+    flex-basis: 120px;
   }
 }
 
