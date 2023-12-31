@@ -19,7 +19,7 @@
 .hero-title {
   position: absolute;
   top: 20vh;
-  right: 0;
+  right: 10%;
   width: 400px;
   filter: drop-shadow(0 0 8px $bg01);
 }
@@ -69,9 +69,22 @@
   gap: 16px;
 }
 
+.social-buttons {
+  img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .icon-down {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 1200px) {
+  .hero-title {
+    right: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -112,13 +125,20 @@
   }
 }
 
+@media (max-width: 576px) {
+  .scroll-text {
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
   h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .img-profile {
     margin-top: 5vh;
+    margin-left: -200px;
   }
 
   .social-buttons {
@@ -127,10 +147,6 @@
       width: 36px;
       height: 36px;
     }
-  }
-
-  .scroll-text {
-    display: none;
   }
 
   .icon-down {

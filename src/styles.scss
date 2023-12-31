@@ -9,7 +9,7 @@ body {
   background-color: $bg01;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.8px;
   line-height: 1.4;
 }
@@ -178,8 +178,9 @@ section {
 
 // global content width
 .content-width {
-  width: 928px;
-  margin: 0 32px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 5%;
 }
 
 // blocks with many lines of text
@@ -236,6 +237,12 @@ section {
 }
 ::-webkit-scrollbar-thumb {
   background-color: $color02;
+}
+
+@media (max-width: 992px) {
+  .content-width {
+    margin: 0 32px;
+  }
 }
 
 @media (max-width: 576px) {

@@ -1,13 +1,25 @@
 @import "src/assets/global-scss.scss";
 
-.about-container {
+.about-01 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  gap: 128px;
 }
 
-.about-description {
-  max-width: 550px;
+.about-01-01 {
+  flex: 1;
+  min-width: 450px;
+}
+
+.about-01-02 {
+  flex: 1;
+  min-width: 450px;
+}
+
+.about-02 {
+  flex: 1;
 }
 
 .benefit-container {
@@ -21,16 +33,11 @@
   margin-right: 32px;
 }
 
-.img-about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .img-profile-head {
   min-width: 200px;
   max-width: 350px;
+
+  margin-top: 16px;
 
   border: 2px solid $color01;
   border-radius: 50%;
@@ -41,13 +48,12 @@
 }
 
 @media (max-width: 992px) {
-  .about-container {
+  .about-01 {
     justify-content: center;
+    width: 100%;
   }
-  .about-description {
-    max-width: 100%;
-  }
-  .img-about {
+
+  .about-02 {
     display: none;
   }
 }
