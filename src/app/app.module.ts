@@ -11,6 +11,7 @@ import { Section03SkillsComponent } from './section03-skills/section03-skills.co
 import { Section04PortfolioComponent } from './section04-portfolio/section04-portfolio.component';
 import { Section05ContactComponent } from './section05-contact/section05-contact.component';
 import { FormsModule } from '@angular/forms';
+import { CloseOutsideDirective } from './close-outside.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     Section03SkillsComponent,
     Section04PortfolioComponent,
     Section05ContactComponent,
+    CloseOutsideDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -9,21 +9,22 @@ import { GlobalService } from '../global.service';
 export class FooterComponent {
   thisYear: number = new Date().getFullYear();
   lang: string = 'eng';
+  imprintOpen = false;
 
   constructor(public gs: GlobalService) {
     this.lang = gs.lang;
   }
 
   showImprint() {
-    let mobileMenu = document.getElementById('imprint-container');
-    if (mobileMenu != null) {
-      mobileMenu.style.display = 'flex';
+    event?.stopPropagation();
+    if (!this.imprintOpen) {
+      this.imprintOpen = true;
     }
   }
+
   closeImprint() {
-    let mobileMenu = document.getElementById('imprint-container');
-    if (mobileMenu != null) {
-      mobileMenu.style.display = 'none';
+    if (this.imprintOpen) {
+      this.imprintOpen = false;
     }
   }
 }

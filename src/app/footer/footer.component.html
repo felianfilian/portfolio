@@ -25,8 +25,8 @@
   </div>
 </div>
 
-<div id="imprint-container">
-  <div class="imprint-content">
+<div *ngIf="imprintOpen" id="imprint-container">
+  <div class="imprint-content" appCloseOutside (closeOutside)="closeImprint()">
     <img
       class="btn-close"
       src="./assets/icons/icon_close.png"
