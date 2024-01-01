@@ -39,7 +39,7 @@
   min-width: 200px;
   max-width: 350px;
 
-  margin-top: 16px;
+  margin-top: 32px;
 
   border: 2px solid $color01;
   border-radius: 50%;
@@ -60,11 +60,21 @@
 }
 
 @media (max-width: 576px) {
+  .about-01-01 {
+    min-width: unset;
+  }
+
+  .about-01-02 {
+    min-width: unset;
+  }
+
   .benefit-container {
     flex-direction: column;
     align-items: center;
     gap: 16px;
 
     padding: 32px 0 0 0;
+
+    text-align: center;
   }
 }
