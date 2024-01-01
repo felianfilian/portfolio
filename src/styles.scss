@@ -56,8 +56,7 @@ p {
 
 section {
   overflow: hidden;
-
-  padding-top: 64px;
+  padding: 64px 0;
 }
 
 .d-none {
@@ -256,6 +255,10 @@ section {
 }
 
 @media (max-width: 576px) {
+  section {
+    padding: 32px 0;
+  }
+
   .text-block {
     justify-content: center;
     text-align: center;
