@@ -96,6 +96,10 @@
     width: 400px;
     filter: drop-shadow(0 0 8px $bg01);
   }
+  
+  .hero-image {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -116,6 +120,11 @@
     padding: 24px;
     text-align: center;
   }
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .img-profile {
     width: auto;
   }
@@ -134,7 +143,7 @@
 @media (max-width: 450px) {
   .img-profile {
     margin-top: 5vh;
-    margin-left: -200px;
+    margin-left: 0;
   }
 
   .social-buttons {
