@@ -49,21 +49,26 @@
   border-bottom-right-radius: 50%;
 }
 
-.scroll-info {
+.hero-footer {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   right: 20px;
+  left: 20px;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 36px;
+}
+
+.social-buttons {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.social-buttons {
-  position: absolute;
-  bottom: 50px;
-  left: 20px;
-
+.scroll-info {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -128,10 +133,6 @@
   .img-profile {
     width: auto;
   }
-  .scroll-info,
-  .social-buttons {
-    bottom: 20px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -144,18 +145,5 @@
   .img-profile {
     margin-top: 5vh;
     margin-left: 0;
-  }
-
-  .social-buttons {
-    width: 100%;
-    img {
-      width: 36px;
-      height: 36px;
-    }
-  }
-
-  .icon-down {
-    width: 36px;
-    height: 36px;
   }
 }

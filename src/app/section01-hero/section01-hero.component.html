@@ -27,24 +27,29 @@
         alt="ds_profile"
       />
     </div>
-    <div class="social-buttons">
-      <a href="https://github.com/felianfilian" target="_blank">
-        <img src="./assets/social_icons/icon_git.png" alt="git" />
-      </a>
-      <a href="mailto:info@dennis-schmalstieg.de" target="_blank">
-        <img src="./assets/social_icons/icon_mail.png" alt="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/dennis-schmalstieg" target="_blank">
-        <img src="./assets/social_icons/icon_linkedin.png" alt="linkedin" />
-      </a>
-      <a href="https://www.xing.com/profile/Dennis_Schmalstieg" target="_blank">
-        <img src="./assets/social_icons/icon_xing.png" alt="xing" />
-      </a>
+    
+    <div class="hero-footer">
+      <div class="social-buttons">
+        <a href="https://github.com/felianfilian" target="_blank">
+          <img src="./assets/social_icons/icon_git.png" alt="git" />
+        </a>
+        <a href="mailto:info@dennis-schmalstieg.de" target="_blank">
+          <img src="./assets/social_icons/icon_mail.png" alt="mail" />
+        </a>
+        <a href="https://www.linkedin.com/in/dennis-schmalstieg" target="_blank">
+          <img src="./assets/social_icons/icon_linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://www.xing.com/profile/Dennis_Schmalstieg" target="_blank">
+          <img src="./assets/social_icons/icon_xing.png" alt="xing" />
+        </a>
+      </div>
+      
+      <div class="scroll-info">
+        <span class="scroll-text" *ngIf="gs.lang == 'eng'">Scroll Down</span>
+        <span class="scroll-text" *ngIf="gs.lang == 'ger'">herunterscollen</span>
+        <img class="icon-down" src="./assets/buttons/down_white.png" alt="" />
+      </div>
     </div>
-    <div class="scroll-info">
-      <span class="scroll-text" *ngIf="gs.lang == 'eng'">Scroll Down</span>
-      <span class="scroll-text" *ngIf="gs.lang == 'ger'">herunterscollen</span>
-      <img class="icon-down" src="./assets/buttons/down_white.png" alt="" />
-    </div>
+    
   </div>
 </section>
