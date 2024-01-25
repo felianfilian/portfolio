@@ -37,10 +37,18 @@
 }
 
 #mobile-menu {
-  display: none;
+  display: flex;
   justify-content: space-between;
   gap: 20px;
-  animation: dropDown 0.3s ease-in;
+
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in;
+}
+
+.show-mobile-menu {
+  opacity: 1 !important;
+  transform: scaleX(1) !important;
 }
 
 #main-menu a {
@@ -97,16 +105,18 @@
   filter: drop-shadow(0 0 8px #fff);
 }
 
-@keyframes dropDown {
-  0% {
-    opacity: 0;
-    transform: scaleX(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
-}
+// DELETE
+//
+// @keyframes dropDown {
+//   0% {
+//     opacity: 0;
+//     transform: scaleX(0);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: scaleX(1);
+//   }
+// }
 
 @media (max-width: 768px) {
   .menu-burger {

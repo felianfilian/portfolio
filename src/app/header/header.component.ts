@@ -17,13 +17,15 @@ export class HeaderComponent {
   showMenu() {
     let mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenu != null) {
-      mobileMenu.style.display = 'flex';
+      mobileMenu.classList.add("show-mobile-menu");
+      // mobileMenu.style.display = 'flex';
     }
   }
   closeMenu() {
     let mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenu != null) {
-      mobileMenu.style.display = 'none';
+      mobileMenu.classList.remove("show-mobile-menu");
+      // mobileMenu.style.display = 'none';
     }
   }
   gotoSection(section: string) {
